@@ -209,7 +209,7 @@ public class InstagramActivity extends ActionMainActivity  {
 			            	}	
 			            	adapter.notifyDataSetChanged();
 
-			            	//notificación carga completada
+			            	//notificaciï¿½n carga completada
 			            	showNotificationLoadComplete();
 			            	
 						} catch (JSONException e) {
@@ -267,7 +267,9 @@ public class InstagramActivity extends ActionMainActivity  {
 			@Override
 			public void onErrorResponse(VolleyError error) {
 				
-				Log.e("ERROR IN VOLLEY REQUEST ",error.getMessage());
+				if(error.getMessage()!=null){
+					Log.e("ERROR IN VOLLEY REQUEST ",error.getMessage());
+				}
 			}
         	
 		};
@@ -288,15 +290,15 @@ public class InstagramActivity extends ActionMainActivity  {
 	}
 	
 	/**
-	 * Función que elimina acentos y caracteres especiales de
+	 * Funcion que elimina acentos y caracteres especiales de
 	 * una cadena de texto.
 	 * @param input
 	 * @return cadena de texto limpia de acentos y caracteres especiales.
 	 */
 	public static String normalizeTag(String tag) {
 	    // Cadena de caracteres original a sustituir.
-	    String original = "áàäéèëíìïóòöúùuñÁÀÄÉÈËÍÌÏÓÒÖÚÙÜÑçÇ";
-	    // Cadena de caracteres ASCII que reemplazarán los originales.
+		String original = "Ã¡Ã Ã¤Ã©Ã¨Ã«Ã­Ã¬Ã¯Ã³Ã²Ã¶ÃºÃ¹uÃ±ÃÃ€Ã„Ã‰ÃˆÃ‹ÃÃŒÃÃ“Ã’Ã–ÃšÃ™ÃœÃ‘Ã§Ã‡";
+	    // Cadena de caracteres ASCII que reemplazaran los originales.
 	    String ascii = "aaaeeeiiiooouuunAAAEEEIIIOOOUUUNcC";
 	    String output = tag;
 	    for (int i=0; i<original.length(); i++) {
