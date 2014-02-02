@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".ExportImportActivity" >
+
+
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/botonExportar"
+            android:layout_width="match_parent"
+	        android:layout_height="100dip"
+            android:drawableTop="@drawable/export"
+            android:onClick="exportarDB"
+            android:text="@string/exportar"
+            android:textStyle="bold" >
+        </Button>
+        
+	</LinearLayout>
+	
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/botonImportar"
+            android:layout_width="match_parent"
+	        android:layout_height="100dip"
+            android:drawableTop="@drawable/export"
+            android:onClick="importarDB"
+            android:text="@string/importar"
+            android:textStyle="bold" >
+        </Button>
+        
+	</LinearLayout>
+	
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/botonInfo"
+            android:layout_width="match_parent"
+	        android:layout_height="100dip"
+            android:drawableTop="@drawable/info"
+            android:onClick="info"
+            android:text="@string/info"
+            android:textStyle="bold" >
+        </Button>
+        
+	</LinearLayout>
+	
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/InfoAplicacion"
+            android:src="@drawable/university_transparent" />
+        
+	</LinearLayout>
+	
+    
+	
+</LinearLayout>
+	

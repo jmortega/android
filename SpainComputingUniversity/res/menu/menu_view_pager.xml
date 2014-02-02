@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spaincomputing="http://schemas.android.com/apk/res-auto">
+
+    <!-- Adds an item to the list. -->
+    
+    <item android:id="@+id/action_previous"
+        android:title="@string/action_previous"
+        android:showAsAction="ifRoom|withText" />
+    
+    <item android:id="@+id/action_last"
+        android:title="@string/action_last"
+        android:showAsAction="ifRoom|withText" />
+    
+    <item android:id="@+id/action_start"
+        android:title="@string/action_start"
+        android:showAsAction="ifRoom|withText" />
+    
+    <item android:id="@+id/mapa" 
+	    android:title="@string/mapa"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/location" />
+
+</menu>

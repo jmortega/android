@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:spaincomputing="http://schemas.android.com/apk/res-auto">
+	<item android:id="@+id/btnListado" android:title="@string/listado"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/lista" />
+	<item android:id="@+id/btnFavoritos" android:title="@string/favoritos"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/favorito" />
+	<item android:id="@+id/btnVerMapa" android:title="@string/mapa"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/mapa" />
+	<item android:id="@+id/miPosicion" android:title="@string/posicion"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/posicion" />
+	<item android:id="@+id/cambiarIdioma" android:title="@string/idioma"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/idioma" />
+	<item android:id="@+id/acerca" android:title="@string/acercaDe"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/info" />
+	<item android:id="@+id/conexion" android:title="@string/conexion"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/wifi" />
+	<item android:id="@+id/preferencias" android:title="@string/preferencias"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/custom" />
+	<item android:id="@+id/listadoGridView" android:title="@string/gridView"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/grid" />
+	<item android:id="@+id/listadoGridView2" android:title="@string/gridImageView"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/grid" />
+	<item android:id="@+id/coverFlowView" android:title="@string/coverFlowView"
+	    spaincomputing:showAsAction="ifRoom|withText"/>
+	<item android:id="@+id/SpinnerView" android:title="@string/spinnerView"
+	    spaincomputing:showAsAction="ifRoom|withText" />
+	<item android:id="@+id/tabsView" android:title="@string/tabsView"
+	    android:showAsAction="ifRoom|withText" />
+	<item android:id="@+id/exportImportView" android:title="@string/exportar_importar"
+	    android:showAsAction="ifRoom|withText" />
+	<item android:id="@+id/salir" android:title="@string/salir_text"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/salir" />
+</menu>

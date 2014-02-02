@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/containerRowPlaces"
+    android:orientation="horizontal" >
+
+      <ImageView
+        android:id="@+id/imageView_imagen2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical|left"
+        android:contentDescription="@string/image"
+        android:visibility="gone"
+        android:src="@android:drawable/ic_menu_gallery" />
+    
+    
+    <com.android.volley.toolbox.NetworkImageView
+        android:contentDescription="@string/InfoAplicacion"
+        android:id="@+id/imageView_imagen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+		android:adjustViewBounds="true"
+		android:layout_gravity="center_vertical|left"
+		android:scaleType="fitXY"
+        android:src="@drawable/icon" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_superior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView_inferior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+ 	<ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="@string/description_zoom_touch_close" />
+    
+</LinearLayout>

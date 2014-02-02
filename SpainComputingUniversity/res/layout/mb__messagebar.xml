@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mbContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="75dip"
+    style="?attr/messageBarContainerStyle">
+
+    <TextView
+        android:id="@id/mbMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/messageBarTextStyle" />
+
+    <TextView
+        android:id="@id/mbButton"
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        style="?attr/messageBarButtonStyle" />
+</LinearLayout>

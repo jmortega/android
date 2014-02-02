@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayoutContactos" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<ListView
+	    android:id="@android:id/list"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:cacheColorHint="@android:color/transparent"
+	    android:divider="@android:color/darker_gray"
+	    android:dividerHeight="4dip"
+	    android:fastScrollEnabled="true"
+	    android:scrollbarSize="40dip"
+	    android:scrollbarStyle="outsideOverlay"
+	    android:scrollbarThumbHorizontal="@drawable/background"
+	    android:scrollingCache="true"
+	    android:smoothScrollbar="true"
+	    android:background="@drawable/fondo2" />
+				
+	<TextView android:id="@android:id/empty" android:layout_width="fill_parent"
+		android:textColor="@color/negro" android:textStyle="bold"
+		android:textSize="20sp" android:layout_height="fill_parent"
+		android:text="@string/contactos_no_encontrados"
+		android:cacheColorHint="@android:color/transparent"
+		android:singleLine="false" android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip" android:gravity="center_vertical|center_horizontal"/>
+
+</LinearLayout>

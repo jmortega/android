@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:spaincomputing="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/opengl" 
+    	android:title="@string/opengl"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/opengl" />
+ 
+    <item android:id="@+id/menu_vista"
+        spaincomputing:showAsAction="ifRoom|withText"
+        android:title="@string/vista"
+        android:icon="@drawable/vista" />
+    
+    <item android:id="@+id/menu_mover"
+        spaincomputing:showAsAction="ifRoom|withText"
+        android:title="@string/mover"
+        android:icon="@drawable/mover" />
+    
+    <item android:id="@+id/menu_animar"
+        spaincomputing:showAsAction="ifRoom|withText"
+        android:title="@string/animar"/>
+    
+    <item android:id="@+id/menu_3d"
+        spaincomputing:showAsAction="ifRoom|withText"
+        android:title="@string/mover3d"
+        android:icon="@drawable/mover_3d" />
+    
+    <item android:id="@+id/menu_posicion"
+        spaincomputing:showAsAction="ifRoom|withText"
+        android:title="@string/posicion"
+        android:icon="@drawable/location" />
+    
+    <item android:id="@+id/menu_providers"
+        spaincomputing:showAsAction="ifRoom|withText"
+        android:title="@string/providers"
+        android:icon="@drawable/location" />
+    
+    <item android:id="@+id/menu_delete_places"
+        spaincomputing:showAsAction="ifRoom|withText"
+        android:title="@string/delete_places"
+        android:icon="@drawable/delete" />
+
+</menu>

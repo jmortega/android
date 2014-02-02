@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+        android:id="@+id/imageView_imagen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical|left"
+        android:contentDescription="@string/image"
+        android:src="@android:drawable/ic_menu_gallery" />
+ 
+    </LinearLayout>
+    
+
+        <TextView
+            android:id="@+id/textView_superior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dip"
+            android:layout_gravity="center_vertical|center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView_inferior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:layout_marginLeft="85dip"
+            android:layout_gravity="center_vertical|center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <!-- Rightend Arrow -->
+     	<ImageView android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/arrow"
+        	android:layout_alignParentRight="true"
+        	android:contentDescription="@string/image"
+        	android:layout_centerVertical="true"/>
+     
+</RelativeLayout>

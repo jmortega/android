@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.proyecto.spaincomputing"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <!-- Permisos -->
+    
+     <!-- Localizacion -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    
+    <permission
+          android:name="com.proyecto.spaincomputing.permission.MAPS_RECEIVE"
+          android:protectionLevel="signature"/>
+   
+    <uses-permission android:name="com.proyecto.spaincomputing.permission.MAPS_RECEIVE"/>
+    
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    
+    <!-- ACTIVAR WIFI -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    
+    <uses-permission android:name="android.permission.CAMERA"/>
+     
+    <!-- Contactos -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    
+    <uses-feature android:name="android.hardware.camera"></uses-feature>
+    
+    
+    
+    <uses-feature
+  		android:glEsVersion="0x00020000"
+  		android:required="true"/>
+    
+    <!-- Soporte para pantalas -->
+    <supports-screens android:anyDensity="true" android:xlargeScreens="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" />
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme"
+        android:configChanges="locale|keyboard|keyboardHidden|orientation"
+        android:name="com.proyecto.spaincomputing.singleton.MySingleton"
+        android:hardwareAccelerated="true">
+        
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        
+         <!-- Put your Google Maps V2 API Key here.-->
+		 <!-- See https://developers.google.com/maps/documentation/android/start#obtaining_an_api_key -->
+		 
+       	 <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAgC3M6eJTv6QyBqyC26NgxZ71sC-lCBWI"/>
+       	 
+
+       	 
+        <activity
+            android:name="com.proyecto.spaincomputing.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/TransparentTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".PrincipalActivity"  android:screenOrientation="portrait"  android:uiOptions="splitActionBarWhenNarrow"  android:theme="@style/Theme.AppCompat.Light" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true" >
+                    	 <meta-data android:name="android.support.UI_OPTIONS" android:value="splitActionBarWhenNarrow" />
+         </activity>
+         <activity android:name=".ListadoActivity" android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+         
+         <activity android:name=".DetalleUniversidadActivity" android:parentActivityName=".ListadoActivity"  android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
+             <!-- Parent activity meta-data to support 4.0 and lower -->
+        	<meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ListadoActivity" />
+         </activity>
+         
+         <activity android:name=".VisorWebActivity" android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".MapaActivity" android:uiOptions="splitActionBarWhenNarrow" android:theme="@style/AppTheme.TranslucentActionBar"  android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".FavoritosActivity" android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+         <activity android:name=".SendMAILActivity" android:uiOptions="splitActionBarWhenNarrow"  android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+         <activity android:name=".MostrarContactosActivity" android:uiOptions="splitActionBarWhenNarrow"   android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+         <activity android:name=".PanoramioActivity" android:uiOptions="splitActionBarWhenNarrow" android:theme="@style/AppTheme.TranslucentActionBar"  android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+         <activity android:name=".ViewPagerActivity" android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".PosicionActivity" android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".GridViewActivity" android:uiOptions="splitActionBarWhenNarrow" android:theme="@style/AppTheme.TranslucentActionBar" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".GridView2Activity" android:uiOptions="splitActionBarWhenNarrow" android:theme="@style/AppTheme.TranslucentActionBar" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".PreferenciasActivity" android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".LinkWebActivity" android:uiOptions="splitActionBarWhenNarrow" android:theme="@style/AppTheme.TranslucentActionBar" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".SpinnerViewActivity" android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".TabsActivity" android:uiOptions="splitActionBarWhenNarrow" android:screenOrientation="portrait" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".UniversityDetailActivity" android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".InstagramActivity" android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".ContactsListActivity" android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".ExportImportActivity" android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+       	 <activity android:name=".FullScreenViewActivity" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:theme="@android:style/Theme.Light.NoTitleBar" android:hardwareAccelerated="true" />
+       	 <activity android:name=".CoverFlowActivity" android:configChanges="locale|keyboard|keyboardHidden|orientation"  android:hardwareAccelerated="true" />
+       	 <activity android:name=".CoverFlowReflectionActivity" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:theme="@style/AppTheme.TranslucentActionBar" android:hardwareAccelerated="true" />
+       	 
+       	 <activity
+            android:name=".ListViewActivity"
+            android:theme="@style/AppTheme.TranslucentActionBar" />
+       	 
+    </application>
+    
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_notificaciones">
+    	<CheckBoxPreference
+        	android:key="pref_notificaciones_favoritos"
+        	android:title="@string/pref_notificaciones_favoritos"
+        	android:summary="@string/pref_notificaciones_favoritos"
+        	android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_grid_view">
+    	<EditTextPreference
+        	android:key="pref_grid_columns"
+        	android:title="@string/pref_grid_columns"
+        	android:summary="@string/pref_grid_columns"
+        	android:defaultValue="3" />
+    </PreferenceCategory>
+</PreferenceScreen>

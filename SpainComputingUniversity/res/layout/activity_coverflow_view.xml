@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	 <view class="com.proyecto.spaincomputing.coverflow.CoverFlow" xmlns:coverflow="http://schemas.android.com/apk/res/com.proyecto.spaincomputing.coverflow"
+		android:id="@+id/coverflow" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="5dip">
+	</view>
+
+	<com.proyecto.spaincomputing.coverflow.CoverFlow xmlns:coverflow="http://schemas.android.com/apk/res/com.proyecto.spaincomputing.coverflow"
+	 	android:id="@+id/coverflowReflect"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" />
+
+
+</LinearLayout>

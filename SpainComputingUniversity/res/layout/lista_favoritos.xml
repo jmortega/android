@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/search_input1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"  >
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/cancel_search" />
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/icon_search" />
+
+        <EditText
+            android:id="@+id/edSearch"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/btnSearch"
+            android:layout_toRightOf="@id/btnLeft"
+            android:background="@null"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" />
+        
+    </RelativeLayout>
+    
+        <ListView  android:id="@+id/LstListado"
+        android:layout_width="match_parent"
+       	android:layout_height="match_parent"
+	    android:divider="@android:color/darker_gray"
+	    android:dividerHeight="2dip"
+	    android:fastScrollEnabled="true"
+	    android:scrollbarSize="30dip"
+	    android:scrollbarStyle="outsideOverlay"
+	    android:scrollbarThumbHorizontal="@drawable/background"
+	    android:cacheColorHint="@android:color/transparent"
+	    android:animateLayoutChanges="true"
+	    android:scrollingCache="true"
+	    android:smoothScrollbar="true"
+        android:layout_marginTop="5dp"
+	    android:background="@drawable/backgroundaux2">
+	    
+        </ListView>
+ 
+        <TextView android:id="@+id/no_favoritos" android:layout_width="fill_parent"
+		android:textColor="@color/negro" android:textStyle="bold"
+		android:textSize="20sp" android:layout_height="fill_parent"
+		android:text="@string/no_hay_favoritos"
+		android:cacheColorHint="@android:color/transparent"
+		android:singleLine="false" android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip" android:gravity="center_vertical|center_horizontal"/>
+        
+</LinearLayout>

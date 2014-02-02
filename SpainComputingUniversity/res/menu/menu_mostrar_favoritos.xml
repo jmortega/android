@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:spaincomputing="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/mapa" 
+        android:title="@string/mapa"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/location" />
+	<item android:id="@+id/rutaGoogle" 
+	    android:title="@string/ruta_google"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/google_map" />
+	<item android:id="@+id/link" 
+	    android:title="@string/link"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/link" />
+	<item android:id="@+id/favorito" 
+	    android:title="@string/eliminar_favorito"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/favorito" />
+	<item android:id="@+id/share" 
+	    android:title="@string/compartir"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/share" />
+	<item android:id="@+id/panoramio" 
+	    android:title="@string/panoramio"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/panoramio" />
+	<item android:id="@+id/instagram" 
+	    android:title="@string/instagram"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/instagram" />
+</menu>

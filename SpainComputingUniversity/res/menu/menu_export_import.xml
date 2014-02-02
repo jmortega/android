@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:spaincomputing="http://schemas.android.com/apk/res-auto">
+	<item android:id="@+id/btnExportar"
+	    spaincomputing:showAsAction="ifRoom|withText" 
+	    android:title="@string/exportar"
+		android:icon="@drawable/export" />
+	
+	<item android:id="@+id/btnImportar"
+	    spaincomputing:showAsAction="ifRoom|withText" 
+	    android:title="@string/importar"
+		android:icon="@drawable/export" />
+	
+	<item android:id="@+id/btnInfo" 
+	    android:title="@string/info"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/info" />
+	
+	<item android:id="@+id/btnRecargarLugares" 
+	    android:title="@string/recargar_lugares"
+	    spaincomputing:showAsAction="ifRoom|withText"
+		android:icon="@drawable/update" />
+</menu>

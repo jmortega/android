@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Spain Computing University</string>
+    <string name="action_settings">Settings</string>
+	<string name="no_datos">NO SE ENCUENTRAN DATOS</string>
+	<string name="image">imagen</string>
+	<string name="imagenes">imágenes</string>
+	<string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    
+    <string name="cargando_datos">Cargando datos</string>
+	<string name="cargando">Espere</string>
+	<string name="cargando_imagenes">Cargando imágenes</string>
+	<string name="error_cargando_imagenes_JSON">ERROR Peticion JSON</string>
+	<string name="carga_ok">Carga OK</string>
+	<string name="action_share">Compartir</string>
+	<string name="action_share_json">Compartir URL JSON</string>
+    <string name="msg_share">Te comparto la información de </string>
+    <string name="txt_notification_title">Carga de datos terminada</string>
+    <string name="txt_notification_title2">Completada carga de imágenes de instagram</string>
+    
+	<string name="volver">Volver</string>
+	<string name="ruta_google">Ruta Google</string>
+	<string name="link">Link</string>
+	<string name="txt_marker_title">Lugar agregado %1$s</string>
+	<string name="txt_marker_snippet">A las %1$s</string>
+	<string name="providers">Providers</string>
+	<string name="delete_places">Elimninar lugares registrados</string>
+	
+	 <string name="list">List</string>
+	 <string name="page_view">Page view</string>
+	 <string name="grid_view">Vista Grid</string>
+	 <string name="actualizar">Actualizar</string>
+	 <string name="orderByPositionASC">Order by position ASC</string>
+	 <string name="orderByPositionDESC">Order by position DESC</string>
+	 <string name="distancia">Distancia</string>
+	 <string name="distanciaMapa">Distancia mapa</string>
+	 <string name="kilometros">kilómetros</string>
+	 <string name="metros">metros</string>
+	 <string name="sin_datos">Sin datos</string>
+	 <string name="file_size">Tamaño fichero</string>
+	 
+	 <string name="places">Places</string>
+	 <string name="listado">Listado</string>
+	 <string name="detalle">Detalle</string>
+	 <string name="acercaDe">Acerca de</string>
+	 <string name="conexion">Conexión</string>
+	 <string name="tipo">Tipo</string>
+	 <string name="gridView">GridView</string>
+	 <string name="spinnerView">SpinnerView</string>
+	 <string name="tabsView">TabsView</string>
+	 <string name="preferencias">Preferencias</string>
+	 <string name="mapa">Mapa</string>
+	 <string name="salir">¿Confirma salir de la aplicación?</string>
+	 <string name="confirmar_delete_places">¿Confirma eliminar los lugares registrados?</string>
+	 <string name="confirmar_enable_provider">Debe activar servicio de ubicación para acceder a la información de su posición</string>
+     <string name="ok">OK</string>
+     <string name="cancel">Cancelar</string>
+	 <string name="Aceptar">Aceptar</string>
+	 <string name="realidad_aumentada">Realidad aumentada</string>
+	 <string name="idioma">Idioma</string>
+	 <string name="salir_text">Salir</string>
+	 <string name="idiomas_soportados">Idiomas soportados:Español/Inglés</string>
+	 
+	 <string name="InfoAplicacion">SPain COmputing UNiversity</string>
+     <string name="InfoNombre">Jose Manuel Ortega Candel</string>
+     <string name="InfoAnyo">2014 ©</string>
+    
+     <string-array name="drawer_options">
+        <item>List view</item>
+        <item>View Pager</item>
+        <item>Places</item>
+        <item>Acerca de</item>
+    </string-array>
+    
+     <string name="drawer_open">Abrir</string>
+     <string name="drawer_close">Cerrar</string>
+     <string name="source_code">Source code</string>
+     <string name="loading_source_code">Loading Source code....</string>
+     
+     <string name="action_previous">Previous</string>
+     <string name="action_next">Next</string>
+     <string name="action_finish">Finish</string>
+     <string name="action_last">Last</string>
+     <string name="action_start">Start</string>
+     
+     <!-- EXPORTAR/IMPORTAR BD -->
+     <string name="info">Info</string>
+	<string name="exportar_importar">Exportar/Importar</string>
+	<string name="exportar">Exportar</string>
+	<string name="importar">Importar</string>
+	<string name="procesando">Procesando datos</string>
+	<string name="exportar_ok">Exportación correcta de lugares</string>
+	<string name="exportar_error">Error en la exportación</string>
+	<string name="importar_ok">Importación correcta de lugares</string>
+	<string name="importar_error">Error en la importación</string>
+	<string name="importar_pregunta">La lista de lugares actual se sobreescribirá ¿Desea continuar?</string>
+	<string name="exportar_importar_info">La exportación e importación de datos se realiza desde la ruta de la tarjeta SD: /Android/data/com.proyecto.spaincomputing.lugaresDB/backup/placesRespaldo.db</string>
+	<string name="recargar_lugares">Recargar lista de lugares</string>
+	<string name="acerca_de_export_import">Acerca de Importar/Exportar</string>
+	
+	
+     <string name="accion">Acción</string>
+     <string name="mostrar">Mostrar</string>
+     <string name="vista">Vista</string>
+     <string name="mover">Mover</string>
+     <string name="animar">Animar</string>
+     <string name="mover3d">Mover 3D</string>
+     <string name="posicion">Mi posición</string>
+     <string name="opengl">Soporte OpenGL</string>
+     <string name="version_opengl">Versión OpenGL</string>
+     <string name="version_ok_opengl">La versión de opengl instalada permite soportar la nueva versión v2 de mapas</string>
+     <string name="version_error_opengl">La versión de opengl instalada no permite soportar la nueva versión v2 de mapas</string>
+     <string name="ver_detalles">Ver detalles</string>
+     <string name="sin_conexion">Sin conexión</string>
+     <string name="enlace_no_encontrado">Enlace no encontrado</string>
+     <string name="seleccionar_universidad">Seleccione una universidad para visualizar el mapa</string>
+     <string name="seleccionar_item_lista">Seleccione un elemento de la lista</string>
+     <string name="www">WWW</string>
+     <string name="favorito">Favorito</string>
+     <string name="favoritos">Favoritos</string>
+     <string name="anyadir_favorito">Añadir a favoritos</string>
+     <string name="eliminar_favorito">Eliminar de favoritos</string>
+     <string name="confirmar_eliminar_favorito">Confirmar eliminar favorito</string>
+     <string name="no_hay_favoritos">No hay favoritos</string>
+     <string name="favorito_existe">La universidad ya aparece en la lista de favoritos</string>
+     <string name="favorito_ok">Universidad agregada a favoritos</string>
+     <string name="eliminada_favoritos">Universidad eliminada de favoritos</string>
+     <string name="seleccione">Seleccione una universidad para visualizar el detalle</string>
+     <string name="compartir">Compartir</string>
+     <string name="compartir_url_json">Compartir URL JSON</string>
+     <string name="aplicacion">Aplicación</string>
+     <string name="search">Search</string>
+     
+     <!-- MAIL -->
+	<string name="comprobar_campos_mail">Compruebe los campos del formulario.Destinatario y Mensaje son obligatorios</string>
+	<string name="enviar_mail">Enviar MAIL</string>
+	<string name="envio_mail_ok">Correo enviado correctamente</string>
+	<string name="envio_mail_error">Error al enviar el Correo</string>
+	<string name="enviar_imagen_adjunta">Enviar imagen adjunta</string>
+	<string name="asunto">Asunto</string>
+	<string name="para">Para</string>
+	<string name="informar_mensaje">Debe informar el campo de mensaje</string>
+    <string name="informar_destinatario">Debe informar el campo destinatario</string>
+	<string name="mensaje">Mensaje</string>
+	
+	<!-- Preferencias -->
+	<string name="pref_notificaciones">Notificaciones</string>
+	<string name="pref_notificaciones_favoritos">Notificaciones favoritos</string>
+	<string name="pref_grid_view">GridView</string>
+	<string name="pref_grid_columns">Número de columnas</string>
+	<!-- Contactos -->
+	<string name="contactos">Contactos</string>
+	<string name="mostrar_contactos">Mostrar Contactos</string>
+	<string name="seleccione_telefono">Seleccione teléfono</string>
+	<string name="seleccione_email">Seleccione email</string>
+	<string name="contactos_no_encontrados">No se han encontrado contactos</string>
+	<string name="contactos_encontrados">contactos encontrados</string>
+	
+    <string name="activity_contacts_list">Contacts List</string>
+    <string name="activity_contact_detail">Contact Detail</string>
+    <string name="contacts_list_search_results_title">Contacts List Search for \"%s\"</string>
+    <string name="app_description">This is a sample app, demonstrating use of the Android system Contacts Provider.</string>
+    <string name="imageview_description">Contact Thumbnail</string>
+    <string name="address_button_description">View Address</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_add_contact">Add Contact</string>
+    <string name="menu_edit_contact">Edit Contact</string>
+    <string name="no_contacts">No Contacts Found</string>
+    <string name="no_contact_selected">No Contact Selected</string>
+    <string name="search_hint">Find contacts</string>
+
+    <!-- Used for the AlphabetIndexer in ContactsListFragment to provide quick navigation by
+         alphabet using ListView fast scroll. -->
+    <string name="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!-- When using ContactsContract.Contacts#CONTENT_FILTER_URI to search contacts, a match occurs
+         when using a number of different fields, such as name, e-mail address, address, phone
+         number, etc. When a match occurs that is not the name, there is currently no way to tell
+         which other field was matched. This string is displayed in the secondary display text in
+         ContactsListFragment when a search query match occurs that is not the display name.
+         -->
+    <string name="search_match_other">Matches Other Field</string>
+
+    <string name="no_address">No addresses found</string>
+    <string name="no_intent_found">No application found to handle this action</string>
+    
+	<string name="panoramio">Panoramio</string>
+	<string name="ir_al_sitio">Ir al sitio</string>
+	<string name="instagram">Instagram</string>
+	
+	<string name="registro_favorito">Nuevo favorito</string>
+    <string name="registro_favorito_text">Se ha registrado un favorito</string>
+    
+    <string name="eliminado_favorito">Eliminado favorito</string>
+    <string name="eliminado_favorito_text">Se ha eliminado un favorito</string>
+    
+    <!-- Conexion internet -->
+	<string name="conexion_internet_ok">Conexión internet OK</string>
+	<string name="conexion_internet_error">No dispone de conexión a internet</string>
+	<string name="conexion_internet_info">Debe disponer de una conexión a internet para acceder a esta funcionalidad</string>
+	
+     <string name="universidad_publica">Universidad Pública</string>
+     <string name="universidad_privada">Universidad Privada</string>
+     
+    <string name="universidad_alicante">Universidad de Alicante</string>
+    <string name="universidad_elche">Universidad Miguel Hernández de Elche</string>
+    <string name="universidad_illes_balears">Universidad de las Illes Balears</string>
+    <string name="universidad_politecnica_valencia">Universitat Politécnica de València</string>
+    <string name="universidad_rey_juan_carlos">Universidad Rey Juan Carlos</string>
+    <string name="universidad_jaume_castellon">Universidad Jaume I de Castellón</string>
+    <string name="universidad_malaga">Universidad de Málaga</string>
+    <string name="universidad_complutense_madrid">Universidad Complutense de Madrid</string>
+    <string name="universidad_ceu">Universidad San Pablo-CEU</string>
+    <string name="universidad_upc">Universidad Politécnica de Catalunya</string>
+    <string name="universidad_uam">Universidad Autónoma de Madrid</string>
+    <string name="universidad_uza">Universidad de Zaragoza</string>
+    <string name="universidad_upm">Universidad Politécnica de Madrid</string>
+    <string name="universidad_mondragon">Mondragón Unibertsitatea</string>
+    <string name="universidad_udima">Universidad a Distancia de Madrid</string>
+    <string name="universidad_uax">Universidad Alfonso X El Sabio</string>
+    <string name="universidad_uan">Universidad Antonio de Nebrija</string>
+    <string name="universidad_uab">Universidad Autónoma de Barcelona</string>
+    <string name="universidad_ucjc">Universidad Camilo José Cela</string>
+	<string name="universidad_ceu2">Universidad Cardenal Herrera-CEU</string>
+	<string name="universidad_c3madrid">Universidad Carlos III de Madrid</string>
+	<string name="universidad_san_antonio">Universidad Católica San Antonio</string>
+	<string name="universidad_coruna">Universidad de A Coruña</string>
+	<string name="universidad_alcala">Universidad de Alcalá</string>
+	<string name="universidad_almeria">Universidad de Almería</string>
+	<string name="universidad_barcelona">Universidad de Barcelona</string>
+	<string name="universidad_burgos">Universidad de Burgos</string>
+	<string name="universidad_cadiz">Universidad de Cádiz</string>
+	<string name="universidad_cantabria">Universidad de Cantabria</string>
+	<string name="universidad_uclm">Universidad de Castilla-La Mancha</string>
+	<string name="universidad_cordoba">Universidad de Córdoba</string>
+	<string name="universidad_extremadura">Universidad de Extremadura</string>
+	<string name="universidad_girona">Universidad de Girona</string>
+	<string name="universidad_granada">Universidad de Granada</string>
+	<string name="universidad_huelva">Universidad de Huelva</string>
+	<string name="universidad_jaen">Universidad de Jaén</string>
+	<string name="universidad_laguna">Universidad de La Laguna</string>
+	<string name="universidad_rioja">Universidad de la Rioja</string>
+	<string name="universidad_canarias">Universidad de Las Palmas de Gran Canaria</string>
+	<string name="universidad_leon">Universidad de León</string>
+	<string name="universidad_lleida">Universidad de Lleida</string>
+	<string name="universidad_murcia">Universidad de Murcia</string>
+	<string name="universidad_oviedo">Universidad de Oviedo</string>
+	<string name="universidad_salamanca">Universidad de Salamanca</string>
+	<string name="universidad_compostela">Universidad de Santiago de Compostela</string>
+	<string name="universidad_sevilla">Universidad de Sevilla</string>
+	<string name="universidad_valladolid">Universidad de Valladolid</string>
+	<string name="universidad_vic">Universidad de Vic</string>
+	<string name="universidad_vigo">Universidad de Vigo</string>
+	
+    <string name="escuela_politecnica_superior">Escuela Politécnica Superior</string>
+    <string name="escuela_tecnica_superior">Escuela Técnica Superior de Ingeniería Informática</string>
+    <string name="escuela_tecnica_superior_alcoy">Escuela Politécnica Superior de Alcoy</string>
+    <string name="escuela_tecnica_superior_urjc">Escuela Técnica Superior de Ingeniería Informática. Campus de Móstoles</string>
+    <string name="escuela_tecnica_superior_uij">Escuela Superior de Tecnología y Ciencias Experimentales</string>
+    <string name="facultad_informatica">Facultad de Informática</string>
+    <string name="escuela_tecnica_superior_manresa">Escuela Politécnica Superior de Ingeniería de Manresa</string>
+    <string name="escuela_ingenieria_arquitectura">Escuela de Ingeniería y Arquitectura</string>
+    <string name="escuela_ingenieria_teleco">Escuela Técnica Superior de Ingenieros de Telecomunicación</string>
+    <string name="facultad_ensenyanza_tecnica">Facultad de Enseñanza Técnica</string>
+  	<string name="escuela_ingeneria">Escuela de Ingeniería</string>
+    <string name="escuela_ingeneria_cerda">Escuela Universitaria de Informática Tomàs Cerdà</string>
+    <string name="centro_universitario_tecnologia">Centro Universitario de Tecnología y Arte Digital (U-Tad)</string>
+    <string name="escuela_superior_ensenyanza_tecnica">Escuela Superior de Enseñanzas Técnicas</string>
+    <string name="escuela_universitaria_politecnica">Escuela Universitaria Politécnica</string>
+    <string name="escuela_universitaria_ingenieria">Escuela Superior de Ingeniería</string>
+    <string name="facultad_matematicas">Facultad de Matemáticas</string>
+    <string name="facultad_ciencias">Facultad de Ciencias</string>
+    <string name="escuela_superior_informatica">Escuela Superior de Informática</string>
+    <string name="escuela_superior_cordoba">Escuela Politécnica Superior de Córdoba</string>
+    <string name="centro_universitario_merida">Centro Universitario de Mérida</string>
+ 	<string name="escuela_superior_iit">Escuela Técnica Superior de Ingenierías de Informática y de Telecomunicación</string>
+    <string name="escuela_superior_jaen">Escuela Politécnica Superior (Jaén)</string>
+    <string name="escuela_rioja">Facultad de Ciencias, Estudios Agroalimentarios e Informática</string>
+    <string name="escuela_canarias">Escuela de Ingeniería Informática.Campus Universitario de Tafira</string>
+    <string name="escuela_leon">Escuela de Ingenierías Industrial e Informática</string>
+    <string name="escuela_gijon">Escuela Politécnica de Ingeniería de Gijón</string>
+    <string name="escuela_zamora">Escuela Politécnica Superior de Zamora</string>
+    
+    
+    <string name="universidad_alicante_graduado">Ingeniería Informática,Ingeniería Multimedia</string>
+    <string name="umh_graduado">Ingeniería Informática en Tecnologías de la Información</string>
+    <string name="uib_graduado">Ingeniería Informática</string>
+    <string name="upv_graduado">Ingeniería Informática por la Universitat Politècnica de València</string>
+    <string name="urjc_graduado_juegos">Diseño y Desarrollo de Videojuegos por la Universidad Rey Juan Carlos</string>
+    <string name="uij_graduado_juegos">Diseño y Desarrollo de Videojuegos por la Universidad Jaume I de Castellón</string>
+    <string name="uma_graduado_computadores">Ingeniería de Computadores,Ingeniería del software</string>
+    <string name="ucm_graduado_computadores">Ingeniería de Computadores por la Universidad Complutense de Madrid</string>
+    <string name="ceu_graduado_sistemas_informacion">Graduado en Ingeniería de Sistemas de Información</string>
+    <string name="upc_graduado_ingenieria_sistemas">Graduado en Ingeniería de Sistemas TIC</string>
+    <string name="uam_graduado_ingenieria_tic">Ingeniería de Tecnologías y Servicios de Telecomunicación por la Universidad Autónoma de Madrid</string>
+    <string name="uza_graduado_ingenieria_tic">Ingeniería de Tecnologías y Servicios de Telecomunicación por la Universidad de Zaragoza</string>
+    <string name="upm_graduado_ingenieria_tic">Ingeniería de Tecnologías y Servicios de Telecomunicación por la Universidad Politécnica de Madrid</string>
+    <string name="upv_graduado_ingenieria_tic">Ingeniería de Tecnologías y Servicios de Telecomunicación por la Universitat Politècnica de València</string>
+    <string name="ucm_graduado_ingenieria_software">Ingeniería del Software por la Universidad Complutense de Madrid</string>
+    <string name="ucm_graduado_ingenieria_informatica">Ingeniería Informática por la Universidad Complutense de Madrid</string>
+    <string name="ingenierio_informatica">Ingeniero en Informática</string>
+    <string name="master_tic">Máster Universitario en Tecnologías de la información y las Comunicaciones</string>
+    <string name="udima_ingenieria_informatica">Ingeniería Informática por la Universidad a Distancia de Madrid</string>
+    <string name="udima_master_arquitectura_software">Máster Universitario en Arquitectura del Software por la Universidad a Distancia de Madrid</string>
+    <string name="udima_master_ingenieria_software">Máster Universitario en Ingeniería del Software por la Universidad a Distancia de Madrid</string>
+    <string name="uax_ingenierio_informatica">Ingeniería Informática por la Universidad Alfonso X El Sabio</string>
+    <string name="uax_ingenierio_sistemas">Ingeniería en Sistemas de Información</string>
+    <string name="uan_ingenierio_informatica">Ingeniería Informática</string>
+    <string name="uab_ingenierio_informatica">Ingeniería Informática</string>
+    <string name="uab_informatica_servicios">Informática y Servicios</string>
+    <string name="uam_ingenieria_informatica">Ingeniería Informatica</string>
+    <string name="ucjc_ingenieria_informatica">Ingeniería Informatica</string>
+    <string name="ceu_ingenieria_informatica">Ingeniería Informatica de Sistemas de información</string>
+    <string name="uc3m_ingenierio_informatica">Ingeniería Informática</string>
+    <string name="ingenierio_informatica_san_antonio">Ingeniería Informática</string>
+    <string name="ingenierio_informatica_coruna">Ingeniería Informática por la Universidad de A Coruña</string>
+    <string name="ingenierio_informatica_alcala">Ingeniería de Computadores,Ingeniero en Informática,Sistemas de Información</string>
+    <string name="ingenierio_informatica_almeria">Ingeniero en Informática</string>
+    <string name="ingenierio_informatica_ub">Ingeniero en Informática</string>
+    <string name="ingenierio_informatica_uburgos">Ingeniero en Informática</string>
+    <string name="ingenierio_informatica_ucadiz">Ingeniero en Informática</string>
+    <string name="ingenierio_informatica_creal">Ingeniero en Informática.Campus Ciudad Real</string>
+    <string name="ingenierio_informatica_albacete">Ingeniero en Informática.Campus Albacete</string> 
+    <string name="ingenierio_informatica_extremadura">Ingeniería Informática en Tecnologías de la Información.Campus Mérida</string>
+    <string name="ingenierio_informatica_extremadura2">Ingeniería Informática en Ingeniería de Computadores,Ingeniería del Software.Campus Cáceres</string>
+    <string name="ingenierio_informatica_granada">Ingeniería Informática,Ingeniería de Tecnologías de Telecomunicación</string>
+    <string name="ingenierio_informatica_murcia">Ingeniería Informática,Máster en Nuevas Tecnologías en Informática</string>
+   	<string name="ingenierio_informatica_oviedo">Ingeniería Informática del software,Máster y doctorado en Ingeniería web</string>
+    <string name="ingenierio_informatica_gijon">Ingeniería Informática en Tecnologías de la Información</string>
+    <string name="ingenierio_informatica_zamora">Ingeniería Informática en Sistemas de Información</string>
+    <string name="ingenierio_informatica_salamanca">Ingeniería Informática</string>
+    <string name="ingenierio_informatica_compostela">Ingeniería Informática,Máster en Tecnologías de la Información</string>
+    <string name="ingenierio_informatica_sevilla">Ingeniería Informática,Ingeniería de Computadores,Ingeniería del Software,Tecnologías Informáticas</string>
+    <string name="ingenierio_informatica_valladolid">Ingeniería Informática</string>
+    <string name="multimedia_vic">Ingeniería Multimedia</string>
+    
+    
+    
+</resources>

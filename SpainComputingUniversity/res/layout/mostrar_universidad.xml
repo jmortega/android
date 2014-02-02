@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbarSize="20dip"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbarThumbVertical="@drawable/backgroundaux"
+    android:smoothScrollbar="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/seleccione"
+                android:layout_width="fill_parent"
+                android:layout_height="115dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/seleccione"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/negro"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgroundaux"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageView_imagen"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/image"
+                    android:scaleType="fitXY"
+                    android:src="@android:drawable/ic_menu_gallery" />
+
+                <Button
+                    android:id="@+id/botonLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginTop="20dip"
+                    android:text="@string/www"
+                    android:textStyle="bold"
+                    android:visibility="invisible" >
+                </Button>
+
+                <ImageView
+                    android:id="@+id/image_favorito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/image"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/favorito"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/botonFavorito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginTop="20dip"
+                    android:drawableLeft="@drawable/favorito"
+                    android:text="@string/favorito"
+                    android:textStyle="bold"
+                    android:visibility="invisible" >
+                </Button>
+
+                <Button
+                    android:id="@+id/botonShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginTop="20dip"
+                    android:drawableLeft="@drawable/share"
+                    android:visibility="invisible" >
+                </Button>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/grado"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/negro"
+                android:textIsSelectable="true"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tipo"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/negro"
+                android:textIsSelectable="true"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/latitudText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:text="@string/latitud"
+                android:textColor="@color/negro"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/latitud"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgroundaux2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/negro"
+                android:textIsSelectable="true"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/longitudText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:text="@string/longitud"
+                android:textColor="@color/negro"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/longitud"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgroundaux2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/negro"
+                android:textIsSelectable="true"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <fragment
+                android:id="@+id/vistaMapa"
+                android:layout_width="match_parent"
+                android:layout_height="450dip"
+                android:layout_weight="1"
+                class="com.google.android.gms.maps.SupportMapFragment" />
+        </LinearLayout>
+        
+    </ScrollView>
+
+    

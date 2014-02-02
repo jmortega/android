@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/widget51"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:padding="20dip"
+android:orientation="vertical"
+android:background="@android:color/transparent"
+>
+
+<ImageView
+	android:id="@+id/imgSplash"
+	android:contentDescription="@string/InfoAplicacion"
+	android:background="@drawable/university"
+	android:layout_gravity = "center"
+	android:layout_width="225dip" 
+	android:layout_height="225dip"/>
+	
+
+</LinearLayout>
