@@ -485,7 +485,7 @@ ConnectionCallbacks, com.google.android.gms.location.LocationListener,OnMapLongC
 			}else{
 
 				//Centramos el mapa en Espanya
-				CameraUpdate camUpd1 = CameraUpdateFactory.newLatLng(new LatLng(40.5, -3.86));
+				CameraUpdate camUpd1 = CameraUpdateFactory.newLatLngZoom(new LatLng(40.5, -3.86),6F);
 				mapa.moveCamera(camUpd1);
 			}
 
