@@ -241,13 +241,13 @@ ConnectionCallbacks, com.google.android.gms.location.LocationListener,OnMapLongC
 							"Orientacion: " + position.bearing + "\n" +
 							"angulo: " + position.tilt);
 
-					/*mostrarToast(
+					mostrarToast(
 			        		"Cambio Camara\n" +
 						            "Lat: " + position.target.latitude + "\n" +
 						            "Lng: " + position.target.longitude + "\n" +
 						            "Zoom: " + position.zoom + "\n" +
 						            "Orientacion: " + position.bearing + "\n" +
-						            "angulo: " + position.tilt);*/
+						            "angulo: " + position.tilt);
 				}
 			});
 
@@ -484,8 +484,8 @@ ConnectionCallbacks, com.google.android.gms.location.LocationListener,OnMapLongC
 				mapa.moveCamera(camUpd1);
 			}else{
 
-				//Centramos el mapa en Espa�a
-				CameraUpdate camUpd1 = CameraUpdateFactory.newLatLng(new LatLng(40.41, -3.69));
+				//Centramos el mapa en Espanya
+				CameraUpdate camUpd1 = CameraUpdateFactory.newLatLng(new LatLng(40.5, -3.86));
 				mapa.moveCamera(camUpd1);
 			}
 
@@ -501,7 +501,7 @@ ConnectionCallbacks, com.google.android.gms.location.LocationListener,OnMapLongC
 
 			}else{
 
-				//Centramos el mapa en Espa�a y con nivel de zoom 5
+				//Centramos el mapa en Espanya y con nivel de zoom 5
 				CameraUpdate camUpd2 = CameraUpdateFactory.newLatLngZoom(new LatLng(42.41, -8.69), 6F);
 				mapa.animateCamera(camUpd2);
 			}

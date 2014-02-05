@@ -6,7 +6,6 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 
 import android.os.Bundle;
@@ -70,8 +69,7 @@ public class PrincipalActivity extends ActionMainActivity{
         
         //Activamos el modo fullscreen
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        
-        getWindow().setUiOptions(ActivityInfo.UIOPTION_SPLIT_ACTION_BAR_WHEN_NARROW);
+      
         
         setContentView(R.layout.main);
        
@@ -134,7 +132,19 @@ public class PrincipalActivity extends ActionMainActivity{
     @Override
     public void onPause() {
         super.onPause();  // Always call the superclass method first
-
+        manager = getSupportFragmentManager();
+        manager.beginTransaction().show(fragments[0]).commit();
+        manager.beginTransaction().hide(fragments[1]).commit();
+        manager.beginTransaction().hide(fragments[2]).commit();
+        manager.beginTransaction().hide(fragments[3]).commit();	
+        manager.beginTransaction().hide(fragments[4]).commit();	
+    
+    }
+    
+    @Override
+    public void onResume() {
+        super.onResume();  // Always call the superclass method first
+        manager = getSupportFragmentManager();
         manager.beginTransaction().show(fragments[0]).commit();
         manager.beginTransaction().hide(fragments[1]).commit();
         manager.beginTransaction().hide(fragments[2]).commit();
@@ -144,7 +154,7 @@ public class PrincipalActivity extends ActionMainActivity{
     }
     
     /**
-     * Se muestran las opciones de menú de la pantalla principal
+     * Se muestran las opciones de menï¿½ de la pantalla principal
      * @param menu Objeto menu 
      */
     @Override
@@ -241,7 +251,7 @@ public class PrincipalActivity extends ActionMainActivity{
 	}
 
 	/**
-     * Definimos las acciones correspondientes con cada opción de menú
+     * Definimos las acciones correspondientes con cada opciï¿½n de menï¿½
      * @param item MenuItem 
      */
     @Override
@@ -555,13 +565,12 @@ public class PrincipalActivity extends ActionMainActivity{
        switch(requestCode) { 
          case Constants.ACTIVIDAD_IDIOMA: 
 
-             if (resultCode != RESULT_CANCELED) {
-                 finish();
                  Intent intent = new Intent();
                  intent.setClass(getApplicationContext(), PrincipalActivity.class);
+                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
                  intent.putExtra(Constants.EXTRA_COLOR, this.currentColor);
                  startActivity(intent);
-             }
+             
              break;
        }
      }

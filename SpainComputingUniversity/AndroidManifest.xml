@@ -73,7 +73,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-         <activity android:name=".PrincipalActivity"  android:screenOrientation="portrait"  android:uiOptions="splitActionBarWhenNarrow"  android:theme="@style/Theme.AppCompat.Light" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true" >
+         <activity android:name="com.proyecto.spaincomputing.PrincipalActivity"  android:screenOrientation="portrait"  android:uiOptions="splitActionBarWhenNarrow"  android:theme="@style/Theme.AppCompat.Light" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true" >
                     	 <meta-data android:name="android.support.UI_OPTIONS" android:value="splitActionBarWhenNarrow" />
          </activity>
          <activity android:name=".ListadoActivity" android:uiOptions="splitActionBarWhenNarrow" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>

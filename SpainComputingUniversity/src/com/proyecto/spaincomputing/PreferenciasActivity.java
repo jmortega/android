@@ -5,6 +5,7 @@ package com.proyecto.spaincomputing;
 
 
 import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -63,6 +64,23 @@ public class PreferenciasActivity extends PreferenceActivity {
         {
             super.onCreate(savedInstanceState);
             
+            ActionBar ab=getActivity().getActionBar();
+            
+            if(ab!=null){
+
+   			 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+
+   					ab.setTitle(getString(R.string.preferencias));
+   					
+   					ab.setDisplayShowHomeEnabled(true);
+   					ab.setDisplayShowTitleEnabled(true);
+   					ab.setDisplayShowCustomEnabled(true);
+   					ab.setHomeButtonEnabled(true);
+   					ab.setDisplayHomeAsUpEnabled(true);
+   			 }
+   		 }	
+            
+			
             PreferenceManager prefManager=getPreferenceManager();
         	prefManager.setSharedPreferencesName("appPreferences");
         	
