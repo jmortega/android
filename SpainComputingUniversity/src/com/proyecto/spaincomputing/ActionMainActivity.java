@@ -47,7 +47,7 @@ import android.widget.Toast;
 
 public class ActionMainActivity extends ActionBarActivity  implements UniversidadListener{
 	
-	private GoogleMap mapa = null;
+	private GoogleMap mapa = null; 
 	private UniversidadBean ubBean;
 	
 	private Drawable oldBackground = null;
