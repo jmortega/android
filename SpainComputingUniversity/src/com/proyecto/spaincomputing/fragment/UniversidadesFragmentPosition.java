@@ -40,6 +40,7 @@ import java.util.StringTokenizer;
 import com.proyecto.spaincomputing.PanoramioActivity;
 import com.proyecto.spaincomputing.R;
 
+import com.proyecto.spaincomputing.adapter.ImagePagerAdapter;
 import com.proyecto.spaincomputing.entity.UniversidadBean;
 import com.proyecto.spaincomputing.listener.UniversidadListener;
 import com.proyecto.spaincomputing.singleton.MySingleton;
@@ -52,7 +53,17 @@ public class UniversidadesFragmentPosition extends Fragment implements LocationL
   
   private ListView lstListado;
  
-  private Button btnSearch;
+  private ArrayList<UniversidadBean> listadoAux=new ArrayList<UniversidadBean>();
+  
+  public static ArrayList<UniversidadBean> getListado() {
+	return listado;
+}
+
+public static void setListado(ArrayList<UniversidadBean> listado) {
+	UniversidadesFragmentPosition.listado = listado;
+}
+
+private Button btnSearch;
   private EditText mtxt;
 	
   //dialogo compartir
@@ -68,6 +79,8 @@ public class UniversidadesFragmentPosition extends Fragment implements LocationL
   private LocationManager locationManager;
   
   private Boolean inicializarDatosASC=false,inicializarDatosDESC=false;
+  
+  private UniversidadAdapter adapter; 
   
   protected int currentColor = 0xFF666666;
   
@@ -210,7 +223,7 @@ public class UniversidadesFragmentPosition extends Fragment implements LocationL
     	  if(distanceDouble>=1){
     		  distance=distanceDouble+" "+getText(R.string.kilometros).toString();
     	  }else{
-    		  distance=(distanceDouble/1000)+" "+getText(R.string.metros).toString();
+    		  distance=(distanceDouble)+" "+getText(R.string.metros).toString();
     	  }
     	  
     	  UniversidadBean ub=new UniversidadBean(listado.get(position).getId(),listado.get(position).getIdImagen(),listado.get(position).getNombre(), listado.get(position).getDescripcion(), listado.get(position).getEnlace(), listado.get(position).getTipo(), listado.get(position).getGrado(), listado.get(position).getLatitud(), listado.get(position).getLongitud(),distanceDouble);
@@ -292,7 +305,7 @@ public class UniversidadesFragmentPosition extends Fragment implements LocationL
 	  return listadoAux;
   }
   
-  public  void inicializarDatosASC(){
+  public  ArrayList<UniversidadBean> inicializarDatosASC(){
 	  
 	  inicializarDatosASC=true;
 	  inicializarDatosDESC=false;
@@ -309,10 +322,11 @@ public class UniversidadesFragmentPosition extends Fragment implements LocationL
 		  }
 		 }
 	}
+	  return listado;
 
   }
   
-  public  void inicializarDatosDESC(){
+  public  ArrayList<UniversidadBean> inicializarDatosDESC(){
 	  
 	  inicializarDatosASC=false;
 	  inicializarDatosDESC=true;
@@ -329,6 +343,7 @@ public class UniversidadesFragmentPosition extends Fragment implements LocationL
 		  }
 		 }
 	}
+	  return listado;
 	  
   }
 
@@ -465,9 +480,8 @@ public class UniversidadesFragmentPosition extends Fragment implements LocationL
   @SuppressLint("DefaultLocale")
   public void setSearchResult(String str) {
 	  
-	  	ArrayList<UniversidadBean> listadoAux=new ArrayList<UniversidadBean>();
+	  	listadoAux=MySingleton.getInstance().getUniversitiesList();
 	  	
-	  	listadoAux=listado;
 	  	listado=new ArrayList<UniversidadBean>();
 
 		for (UniversidadBean temp : listadoAux) {
@@ -478,7 +492,7 @@ public class UniversidadesFragmentPosition extends Fragment implements LocationL
 			}
 		}
 		
-		if(inicializarDatosASC){
+		/*if(inicializarDatosASC){
 			  
 			  for (int i = 0; i < listado.size(); i++) {
 				  for (int j = i + 1; j < listado.size(); j++) {
@@ -509,9 +523,17 @@ public class UniversidadesFragmentPosition extends Fragment implements LocationL
 				 }
 			}
 			  
-		  }
+		  }*/
 		
-		lstListado.setAdapter(new UniversidadAdapter(this));
+		if(str!=null && str.equals("")){
+			listado=listadoAux;
+		}
+		
+		
+		adapter=new  UniversidadAdapter(this);
+		adapter.notifyDataSetChanged();
+		
+		lstListado.setAdapter(adapter);
 	    registerForContextMenu(lstListado);
 	    
 	}
@@ -545,13 +567,13 @@ public class UniversidadesFragmentPosition extends Fragment implements LocationL
 	    	if(loc != null)
 	    	{
 	    		myLocation=new Location(loc);
-	    		latitudText.setText(getText(R.string.latitud).toString()+": " + String.valueOf(loc.getLatitude()));
-	    		longitudText.setText(getText(R.string.longitud).toString()+": "  + String.valueOf(loc.getLongitude()));
+	    		latitudText.setText(getActivity().getText(R.string.latitud).toString()+": " + String.valueOf(loc.getLatitude()));
+	    		longitudText.setText(getActivity().getText(R.string.longitud).toString()+": "  + String.valueOf(loc.getLongitude()));
 	    	}
 	    	else
 	    	{
-	    		latitudText.setText(getText(R.string.latitud).toString()+": "+getText(R.string.sin_datos).toString());
-	    		longitudText.setText(getText(R.string.longitud).toString()+": "+getText(R.string.sin_datos).toString());
+	    		latitudText.setText(getActivity().getText(R.string.latitud).toString()+": "+getText(R.string.sin_datos).toString());
+	    		longitudText.setText(getActivity().getText(R.string.longitud).toString()+": "+getText(R.string.sin_datos).toString());
 	    	}
 	    	
 	}
@@ -605,7 +627,7 @@ public class UniversidadesFragmentPosition extends Fragment implements LocationL
       		
       	}else{
       		
-      		//Obtenemos la última posición conocida
+      		//Obtenemos la ultima posicion conocida
           	Location loc = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
           	
           	mostrarPosicion(loc);

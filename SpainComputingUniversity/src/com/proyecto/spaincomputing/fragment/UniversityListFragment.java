@@ -49,7 +49,7 @@ public class UniversityListFragment extends Fragment implements OnItemClickListe
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_universidades_list, container, false);
-		list = (ListView)view.findViewById(R.id.listView);
+		list = (ListView)view.findViewById(R.id.auxlistView);
 		
 		listado=inicializarDatos();
 		
@@ -72,7 +72,12 @@ public class UniversityListFragment extends Fragment implements OnItemClickListe
 		return view;
 	}
 
-
+	@Override
+    public void onResume() {
+        super.onResume();  // Always call the superclass method first
+    
+    }
+	
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 		inflater.inflate(R.menu.menu_compartir, menu);
@@ -137,7 +142,7 @@ public class UniversityListFragment extends Fragment implements OnItemClickListe
 			FragmentManager manager = getActivity().getSupportFragmentManager();
 			UniversidadInfoFragment fragment = (UniversidadInfoFragment) manager.findFragmentById(R.id.fragmentUniversidadInfo);
 			fragment.loadWebViewContent(ub.getEnlace());
-			getActivity().invalidateOptionsMenu();
+			//getActivity().invalidateOptionsMenu();
 		} else {
 			Intent intent = new Intent(getActivity().getApplicationContext(), UniversityDetailActivity.class);
 			intent.putExtra(UniversityDetailActivity.URL, ub.getEnlace());

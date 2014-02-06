@@ -154,7 +154,7 @@ public class PrincipalActivity extends ActionMainActivity{
     }
     
     /**
-     * Se muestran las opciones de men� de la pantalla principal
+     * Se muestran las opciones de menu de la pantalla principal
      * @param menu Objeto menu 
      */
     @Override

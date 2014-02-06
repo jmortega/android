@@ -82,10 +82,10 @@ public class TabsActivity extends ActionMainActivity implements TabListener,andr
 
         FragmentManager manager = getSupportFragmentManager();
         manager.beginTransaction()
-        	    .add(R.id.mainContent, fragments[0],fragment_tags.get(0))
-        		.add(R.id.mainContent, fragments[1],fragment_tags.get(1))
-        		.add(R.id.mainContent, fragments[2],fragment_tags.get(2))
-        		.add(R.id.mainContent, fragments[3],fragment_tags.get(3))
+        	    .add(R.id.mainContent2, fragments[0],fragment_tags.get(0))
+        		.add(R.id.mainContent2, fragments[1],fragment_tags.get(1))
+        		.add(R.id.mainContent2, fragments[2],fragment_tags.get(2))
+        		.add(R.id.mainContent2, fragments[3],fragment_tags.get(3))
         	    .commit();
         
 	}

@@ -78,7 +78,11 @@ public class PosicionActivity extends ActionMainActivity implements UniversidadL
     @Override
 	 public boolean onOptionsItemSelected(MenuItem item) {
 		
+    UniversidadesFragmentPosition listado=(UniversidadesFragmentPosition)getSupportFragmentManager().findFragmentById(R.id.FrgListadoPosition);
+    	  
 	  switch (item.getItemId()) {
+	  
+	
 	  
 	  	case android.R.id.home: 
 	  		
@@ -87,8 +91,6 @@ public class PosicionActivity extends ActionMainActivity implements UniversidadL
         break;
         
 	  	case  R.id.actualizar:
-	  		
-	  		UniversidadesFragmentPosition listado=(UniversidadesFragmentPosition)getSupportFragmentManager().findFragmentById(R.id.FrgListadoPosition);
 	  		
 	  		listado.comenzarLocalizacion();
 	  		
@@ -104,12 +106,12 @@ public class PosicionActivity extends ActionMainActivity implements UniversidadL
 	  		
 	  	case  R.id.btnPositionASC:
 	  		
+	  		
 	  		UniversidadesFragmentPosition listadoASC=(UniversidadesFragmentPosition)getSupportFragmentManager().findFragmentById(R.id.FrgListadoPosition);
 	  		
 	  		listadoASC.comenzarLocalizacion();
 	  		
-	  		listadoASC.inicializarDatosASC();
-	  		
+	  		listado.setListado(listadoASC.inicializarDatosASC());
 	  		
 	  		
 	  		break;
@@ -120,7 +122,7 @@ public class PosicionActivity extends ActionMainActivity implements UniversidadL
 	  		
 	  		listadoDESC.comenzarLocalizacion();
 	  		
-	  		listadoDESC.inicializarDatosDESC();
+	  		listado.setListado(listadoDESC.inicializarDatosDESC());
 	  		
 	  		
 	  		
